@@ -4,6 +4,10 @@ import plotly.graph_objects as go # eftersom att flera linjer inkluderas i diagr
 import pandas as pd # pandas importeras för att skapa dataframes där den genererade datan ingår.
 import statistics # För att göra statistiska uträkningar (t.ex. standardavvikelser) importeras statistics-biblioteket.
 
+'''
+Nytt kodblock
+
+'''
 
 priceindex = [] #Index/varje given tidpunkt för simulationen (representerar x-axeln i diagrammet).
 stockprices = [] # En lista som populeras med aktiepriser när simulationen körs (representerar y-axeln i diagrammet).
@@ -106,8 +110,7 @@ def transaction(bank,
                                         'Stocks after transaction': portfolio, ' Bank Amount': round(bank, 2),
                                         'Price': round(price, 2)})
             # transactionhistory-listan tar emot sälj-händelsen.
-        if i == len(df[
-                        'Data']) - 1:  # I det fall då vi kommit till periodens slut, ska alla aktier säljas och slutgiltiga kapitalet visas.
+        if i == len(df['Data']) - 1:  # I det fall då vi kommit till periodens slut, ska alla aktier säljas och slutgiltiga kapitalet visas.
             bank += portfolio * price  # Aktieinnehavets mängd multiplicerat med det aktuella aktiepriset adderas till kapitalet.
             transaction_history.append({'Period-index': i, ' Signal': 'Sell', 'Stocks in transaction': portfolio,
                                         'Stocks after transaction': 0, ' Bank Amount': round(bank, 2),
