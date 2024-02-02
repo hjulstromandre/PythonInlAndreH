@@ -10,11 +10,11 @@ Applikationen är indelad i tre huvudsakliga delar:
 - Statistisk analys: I den här delen räknas medelvärdet ut för varje fönster, det börjar på det index som användaren valt. Om användaren väljer 50 som fönsterstorlek, så börjar den räkna medelvärdet för index 50 och bakåt (0-50,1-51,2-52 etc...), detta kallas för gidande medelvärde. Sedan räknas standardavvikelsen ut för varje enskilt fönster och läggs till i form av linjediagram tillsammans med det glidande medelvärdet. Om priset hamnar under det nedre bandet, så köper applikationen och om det hamnar över det övre bandet, säljer applikationen. Funktionen som ansvarar för detta heter: generatebollingerbands
 - Trading: I den här delen sker själva köpandet och säljandet utifrån angivna villkor. Logiken är skriven helt utifrån ovannnämnd idé, dvs att köpa billigt och sälja dyrt utifrån den dittills observerade trenden i det ögonblicket då villkoren kontrolleras. Varje transaktion är objekt inuti en dataframe som samlar alla transaktioner för analys och visualisering i tabellformat. Dessa objekt har följande attribut:
   - Period-index: Detta är den positionen simulationen hade då beslutet togs att utföra en transaktion (inte index i listan av transaktioner)
-      - Signal: Vilken typ av transaktion det gäller (köp eller sälj)
-      - Stocks in transaction: Hur många aktier som köptes eller såldes i det ögonblicket
-      - Stocks after transaction: Hur många aktier som finns i portfolion efter transaktionen ägt rum
-      - Bank Amount: Hur mycket fritt kapital användaren har i simulationen efter transaktionen utförts
-      - Price: Priset för aktien då transaktionen skedde
+  - Signal: Vilken typ av transaktion det gäller (köp eller sälj)
+  - Stocks in transaction: Hur många aktier som köptes eller såldes i det ögonblicket
+  - Stocks after transaction: Hur många aktier som finns i portfolion efter transaktionen ägt rum
+  - Bank Amount: Hur mycket fritt kapital användaren har i simulationen efter transaktionen utförts
+  - Price: Priset för aktien då transaktionen skedde
   
 Funktionen som ansvarar för denna del av applikationen heter: transaction
 
