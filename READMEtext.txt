@@ -4,7 +4,11 @@ Inlämning för pythonkurs
 
 OBS: Se koden i Python-filen, då det visade sig vara problem att visa Notebooken i preview här på GitHub. Jag har markerat var i koden där blockens gränser är. Den är menad att köras som Notebook.
 
+<<<<<<< HEAD
 Applikationen är tänkt att vara en testyta för en simpel trading-algoritm. Denna går ut på att köpa då aktiepriset verkar billigt i förhållande till trenden och sälja då den verkar dyr. Användaren har möjlighet att avgöra periodens längd, aktiens urpsrungliga värde, hur långt spann av priser som medelvärdet ska räknas på (fönster), samt hur många standardavvikelser från medelvärdet de vill handla utifrån.
+=======
+Applikationen är tänkt att vara en testyta för simpel trading-algoritm. Denna går ut på att köpa då aktiepriset verkar billigt i förhållande till trenden och sälja då den verkar dyr. Användaren har möjlighet att avgöra periodens längd, aktiens urpsrungliga värde, hur långt spann av priser som medelvärdet ska räknas på (fönster), samt hur många standardavvikelser från medelvärdet de vill handla utifrån.
+>>>>>>> f2c5e077addf7db8992bf41d0816a71c0f9679b1
 
 Applikationen är indelad i tre huvudsakliga delar:
 - Prisgenerering: I den här delen simuleras en prisutveckling genom att använda biblioteken Numpy (random), samt Pandas för att spara denna utveckling i en dataframe för senare analys och visualisering. Funktionen som ansvarar för detta heter: generateprices
@@ -19,4 +23,9 @@ Applikationen är indelad i tre huvudsakliga delar:
   
 Funktionen som ansvarar för denna del av applikationen heter: transaction
 
+<<<<<<< HEAD
 Slutligen visas diagrammet med prisutvecklingskurvan, glidande medelvärde för perioden och Bollinger-banden. Förutom detta visas även transaktionshistoriken i form av en dataframe-tabell där man kan se vid vilka skeden applikationen sålt och köpt aktier. Det visas även en jämförelse mellan total vinst efter periodens slut och hur mycket man hade haft om man helt enkelt hade köpt aktier för allt fritt kapital och hållt för hela perioden utan vidare transaktioner.
+=======
+Slutligen visas diagrammet med prisutvecklingskurvan, glidande medelvärde för perioden och Bollinger-banden. Förutom detta visas även transaktionshistoriken i form av en dataframe-tabell där man kan se vid vilka skeden applikationen sålt och köpt aktier. Det visas även en jämförelse mellan total vinst efter periodens slut och hur mycket man hade haft om man helt enkelt hade köpt aktier för allt fritt kapital och hållt för hela perioden utan vidare transaktioner.
+  
+>>>>>>> f2c5e077addf7db8992bf41d0816a71c0f9679b1
