@@ -69,8 +69,7 @@ startbank = bank  # startkapitalet sparas i en variabel, används senare för at
 portfolio = 0  # Denna variabel sparar antalet aktier. I periodens början är värdet 0
 
 
-def transaction(bank,
-                portfolio):  # I den här funktionen exekveras köp av aktier, samt sälj av innehav beroende på vilka signaler som genereras.
+def transaction(bank,portfolio):  # I den här funktionen exekveras köp av aktier, samt sälj av innehav beroende på vilka signaler som genereras.
     for i, price in enumerate(df[
                                   'Data']):  # En for-loop skapas för att komma åt aktiepriset vid varje indexposition och enumerate används för att iterera över dataframe-kolumnen samtidigt som den spårar indexet för varje värde.
 
